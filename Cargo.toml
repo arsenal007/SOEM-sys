@@ -7,10 +7,14 @@ description = "Rust FFI bindings for SOEM"
 documentation = "http://docs.rs/SOEM-sys"
 repository = "https://github.com/matwey/SOEM-sys"
 readme = "README.md"
+build = "build.rs"
+
 
 [badges]
 travis-ci = { repository = "matwey/SOEM-sys", branch = "master" }
 
+[dependencies]
+
 [build-dependencies]
 cmake = "0.1"
-bindgen = "0.53.2"
+bindgen = "0.59.2"
